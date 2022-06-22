@@ -6,14 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>vue</title>
     <script defer src="https://unpkg.com/vue@next"></script>
-    <script defer src="./js/sec09.js"></script>
+    <script defer src="./js/sec11.js"></script>
 </head>
 <body>
-<div id="app">
-    <h1 v-if="num < 0">true 입니다.</h1>
-    <h1 v-else-if="num > 50">num 값이 참입니다.</h1>
-    <h1 v-else-if="title === 'num'">title 값이 참입니다.</h1>
-    <h1 v-else>false 값입니다.</h1>
-</div>
+    <div id="app">
+        <!-- <button v-on:click="count++">{{count}}</button> -->
+        <button @click="count++">추가 더하기</button>
+        <p>{{name}} : {{count}}</p>
+    </div>
 </body>
 </html>

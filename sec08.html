@@ -6,9 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>vue</title>
     <script defer src="https://unpkg.com/vue@next"></script>
-    <script defer src="./js/sec05.js"></script>
+    <script defer src="./js/sec08.js"></script>
 </head>
 <body>
-
+<div id="app">
+    <ul>
+        <li v-for="(str,index) in num">
+            {{index}} : {{str}}
+        </li>
+    </ul>
+</div>
 </body>
 </html>
