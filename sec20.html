@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vue</title>
+    <script defer src="https://unpkg.com/vue@next"></script>
+    <script defer src="./js/sec20.js"></script>
+</head>
+<body>
+<div id="app">
+    <p>
+        <input type="checkbox" id="check" v-model="checked">
+        <label for="check">check</label>
+        <span>{{checked}}</span>
+    </p>
+    <p>
+        <input type="radio"id="no01" value="value01" v-model="picked">
+        <label for="no01">no01</label>
+        <input type="radio"id="no02" value="value02" v-model="picked">
+        <label for="no02">no02</label>
+        <input type="radio"id="no03" value="value03" v-model="picked">
+        <label for="no02">no03</label>
+
+        <span>{{picked}}</span>
+    </p>
+</div>
+<!--  26-36 -->
+</body>
+</html>
